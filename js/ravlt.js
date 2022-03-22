@@ -1,86 +1,79 @@
 const coefs = {
-  'intercept': 5.070,
-  'age': -0.035,
-  'education': 0.129,
-  'sex': 0.748,
-  'sd': 1.590,
+  'intercept': 5.052935,
+  'age': -0.041005,
+  'education': 0.127599,
+  'sex': 0.761477,
+  'sd': 1.589299,
   'trial1': {
     'b': 0,
     'age': 0,
     'education': 0,
     'sex': 0,
-    'sd': 1.590
+    'sd': 1.589299
   },
 
   'trial2': {
-    'b': 2.430,
-    'age': -0.035,
-    'education': 0.129,
-    'sex': 0.748,
-    'sd': 1.590
+    'b': 2.456629,
+    'education': 0.096803,
+    'sex': 0.540453,
+    'sd': 1.812938
   },
   'trial3': {
-    'b': 3.834,
-    'age': -0.035,
-    'education': 0.129,
-    'sex': 0.748,
-    'sd': 1.590
+    'b': 3.825560,
+    'education': 0.122444,
+    'sex': 0.620025,
+    'sd': 2.068447
   },
   'trial4': {
-    'b': 5.063,
-    'age': -0.035,
-    'education': 0.129,
-    'sex': 0.748,
-    'sd': 1.590
+    'b': 5.099066,
+    'education': 0.120430,
+    'sex': 0.317594,
+    'sd': 2.167247
   },
   'trial5': {
-    'b': 5.558,
-    'age': -0.035,
-    'education': 0.129,
-    'sex': 0.748,
-    'sd': 1.590
+    'b': 5.591102,
+    'education': 0.157893,
+    'sex': 0.570805,
+    'sd': 2.118599
   },
   'trial6': {
-    'b': 3.274,
-    'age': -0.035,
-    'education': 0.129,
-    'sex': 0.748,
-    'sd': 1.590
+    'b': 3.281919,
+    'education': 0.212357,
+    'sex': 0.900086,
+    'sd': 2.676763
   },
   'trial7': {
-    'b': 3.145,
-    'age': -0.035,
-    'education': 0.129,
-    'sex': 0.748,
-    'sd': 1.590
+    'b': 3.150541,
+    'education': 0.230134,
+    'sex': 0.712087,
+    'sd': 2.695187
   },
   'listb': {
-    'b': 0.165,
-    'age': -0.035,
-    'education': 0.129,
-    'sex': 0.748,
-    'sd': 1.590
+    'b': 0.181328,
+    'education': 0.053071,
+    'sex': -0.414812,
+    'sd': 1.673211
   },
 
   // Derived measures
   'total-learning': {
-    'intercept': 42.319,
-    'age': -0.270,
-    'education': 1.097,
-    'sex': 5.861,
-    'sd': 7.983
+    'intercept': 42.295694,
+    'age': -0.269194,
+    'education': 1.095370,
+    'sex': 5.853990,
+    'sd': 7.981813
   },
   'learning-over': {
-    'intercept': 16.981,
-    'education': 0.485,
-    'sex': 2.155,
-    'sd': 6.695
+    'intercept': 16.971644,
+    'education': 0.479403,
+    'sex': 2.151586,
+    'sd': 6.698638
   },
   'learning-rate': {
-    'intercept': 5.594,
-    'education': 0.159,
-    'sex': 0.572,
-    'sd': 6.695
+    'intercept': 5.591102,
+    'education': 0.157893,
+    'sex': 0.570805,
+    'sd': 2.132889
   },
   'proactive': {
     'intercept': 0.053,
@@ -91,10 +84,10 @@ const coefs = {
     'sd': 1.886
   },
   'ltpr': {
-    'intercept': 77.405,
-    'age': -0.429,
-    'education': 3.834,
-    'sd': 16.502
+    'intercept': 77.377120,
+    'age': -0.427209,
+    'education': 1.054169,
+    'sd': 16.492587
   },
 }
 

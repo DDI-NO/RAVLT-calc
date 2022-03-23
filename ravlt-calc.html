@@ -1,38 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Rey Auditory Verbal Learning Test Norm Calculator</title>
-    <style media="screen">
-  		#calc {
-  			padding: 25px;
-  		}
 
-  		#cowat {
-  			margin-top: 50px;
-  		}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      .measures{
-        margin-bottom: 25px;
-      }
-  	</style>
-    <!-- <script src="js/jquery-3.6.0.min.js" charset="utf-8"></script>
+  <title>Rey Auditory Verbal Learning Test Norm Calculator</title>
+  <style media="screen">
+    #calc {
+      padding: 25px;
+    }
+
+    #cowat {
+      margin-top: 50px;
+    }
+
+    .measures {
+      margin-bottom: 25px;
+    }
+  </style>
+  <!-- <script src="js/jquery-3.6.0.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js" charset="utf-8" ></script> -->
 
 
-    <!-- <script src="js/ravlt.js" charset="utf-8"></script> -->
+  <!-- <script src="js/ravlt.js" charset="utf-8"></script> -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  </head>
-  <body class="bg-light">
-    <div class="container">
-      <div class="py-5 text-center">
+</head>
 
-			<h2>Rey Auditory Verbal Learning Test Norm Calculator</h2>
+<body class="bg-light">
+  <div class="container">
+    <div class="py-5 text-center">
 
-		</div>
+      <h2>Rey Auditory Verbal Learning Test Norm Calculator</h2>
+
+    </div>
 
     <div class="border rounded">
       <form class="" action="#" id="calc">
@@ -40,25 +44,38 @@
           <!-- Demographics -->
           <div class="form-group row">
             <label for="age1" class="col-sm-2 col-form-label">Age</label>
-  					<div class="col-sm-4 col-4">
-  						<input type="number" class="form-control form-control-sm" id="age" min="49" max="79" placeholder="49 - 79" required/>
-  	  			</div>
-  				</div>
-  				<div class="form-group row">
-  					<label for="years1" class="col-sm-2 col-form-label">Years of education</label>
-  					<div class="col-sm-4">
-  						<input type="number" class="form-control form-control-sm" id="edu" min="6" max="24" placeholder="6 - 24" required>
-  	  			</div>
+            <div class="col-sm-4 col-4">
+              <input type="number" class="form-control form-control-sm" id="age" min="49" max="79" placeholder="49 - 79" required />
+            </div>
           </div>
           <div class="form-group row">
-  					<label for="gender" class="col-sm-2 col-form-label">Sex</label>
-  					<div class="col-sm-4">
-  						<select class="form-select form-select-sm d-block w-100" id="sex" required>
+            <label for="years1" class="col-sm-2 col-form-label">Years of education</label>
+            <div class="col-sm-4">
+              <input type="number" class="form-control form-control-sm" id="edu" min="6" max="24" placeholder="6 - 24" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="gender" class="col-sm-2 col-form-label">Sex</label>
+            <div class="col-sm-4">
+              <!-- <select class="form-select form-select-sm d-block w-100" id="sex" required>
   	              <option value="0">Male</option>
   	              <option value="1">Female</option>
-  	            </select>
-  					</div>
-  				</div>
+  	            </select> -->
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sex" id="radio-male" value="0" checked>
+                <label class="form-check-label" for="radio-male">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sex" id="radio-female" value="1">
+                <label class="form-check-label" for="radio-female">
+                  Female
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="form-group row">
@@ -71,88 +88,88 @@
         <div class="measures">
           <!-- Header d-none d-sm-block -->
           <h5>Primary measures</h5>
-  					<div class="form-group row">
-  						<div class="col-sm-2 col-3">
-  						</div>
-  						<label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Raw score</label>
-  						<label for="raw-score-a" class="col-sm-2 col-3 col-form-label">T-Score</label>
-  						<!-- <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">T-Score <small>(age only)</small></label> -->
-  					</div>
+          <div class="form-group row">
+            <div class="col-sm-2 col-3">
+            </div>
+            <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Raw score</label>
+            <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">T-Score</label>
+            <!-- <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">T-Score <small>(age only)</small></label> -->
+          </div>
 
-  					<div class="form-group row">
-  						<label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Trial 1</label>
-  						<div class="col-sm-2 col-3">
-  							<input type="number" class="form-control form-control-sm raw" data-trial="trial1" id="raw-1">
-  		  			</div>
-  						<div class="col-sm-2 col-3">
-  							<input type="text" class="form-control form-control-sm tscore" id="t-score-trial1" readonly>
-  		  			</div>
-  					</div>
+          <div class="form-group row">
+            <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Trial 1</label>
+            <div class="col-sm-2 col-3">
+              <input type="number" class="form-control form-control-sm raw" data-trial="trial1" id="raw-1">
+            </div>
+            <div class="col-sm-2 col-3">
+              <input type="text" class="form-control form-control-sm tscore" id="t-score-trial1" readonly>
+            </div>
+          </div>
 
-            <div class="form-group row">
-  						<label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Trial 2</label>
-  						<div class="col-sm-2 col-3">
-  							<input type="number" class="form-control form-control-sm raw" id="raw-2" data-trial="trial2">
-  		  			</div>
-  						<div class="col-sm-2 col-3">
-  							<input type="text" class="form-control form-control-sm tscore" id="t-score-trial2" readonly>
-  		  			</div>
-  					</div>
+          <div class="form-group row">
+            <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Trial 2</label>
+            <div class="col-sm-2 col-3">
+              <input type="number" class="form-control form-control-sm raw" id="raw-2" data-trial="trial2">
+            </div>
+            <div class="col-sm-2 col-3">
+              <input type="text" class="form-control form-control-sm tscore" id="t-score-trial2" readonly>
+            </div>
+          </div>
 
-            <div class="form-group row">
-              <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Trial 3</label>
-              <div class="col-sm-2 col-3">
-                <input type="number" class="form-control form-control-sm raw" id="raw-3" data-trial="trial3">
-              </div>
-              <div class="col-sm-2 col-3">
-                <input type="text" class="form-control form-control-sm tscore" id="t-score-trial3" readonly>
-              </div>
+          <div class="form-group row">
+            <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Trial 3</label>
+            <div class="col-sm-2 col-3">
+              <input type="number" class="form-control form-control-sm raw" id="raw-3" data-trial="trial3">
             </div>
-            <div class="form-group row">
-              <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Trial 4</label>
-              <div class="col-sm-2 col-3">
-                <input type="number" class="form-control form-control-sm raw" id="raw-4" data-trial="trial4">
-              </div>
-              <div class="col-sm-2 col-3">
-                <input type="text" class="form-control form-control-sm tscore" id="t-score-trial4" readonly>
-              </div>
+            <div class="col-sm-2 col-3">
+              <input type="text" class="form-control form-control-sm tscore" id="t-score-trial3" readonly>
             </div>
-            <div class="form-group row">
-              <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Trial 5</label>
-              <div class="col-sm-2 col-3">
-                <input type="number" class="form-control form-control-sm raw" id="raw-5" data-trial="trial5">
-              </div>
-              <div class="col-sm-2 col-3">
-                <input type="text" class="form-control form-control-sm tscore" id="t-score-trial5" readonly>
-              </div>
+          </div>
+          <div class="form-group row">
+            <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Trial 4</label>
+            <div class="col-sm-2 col-3">
+              <input type="number" class="form-control form-control-sm raw" id="raw-4" data-trial="trial4">
             </div>
-            <div class="form-group row">
-              <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">List B</label>
-              <div class="col-sm-2 col-3">
-                <input type="number" class="form-control form-control-sm raw" id="raw-list-B" data-trial="listb">
-              </div>
-              <div class="col-sm-2 col-3">
-                <input type="text" class="form-control form-control-sm tscore" id="t-score-listb" readonly>
-              </div>
+            <div class="col-sm-2 col-3">
+              <input type="text" class="form-control form-control-sm tscore" id="t-score-trial4" readonly>
             </div>
-            <div class="form-group row">
-              <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Trial 6</label>
-              <div class="col-sm-2 col-3">
-                <input type="number" class="form-control form-control-sm raw" id="raw-6" data-trial="trial6">
-              </div>
-              <div class="col-sm-2 col-3">
-                <input type="text" class="form-control form-control-sm tscore" id="t-score-trial6" readonly>
-              </div>
+          </div>
+          <div class="form-group row">
+            <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Trial 5</label>
+            <div class="col-sm-2 col-3">
+              <input type="number" class="form-control form-control-sm raw" id="raw-5" data-trial="trial5">
             </div>
-            <div class="form-group row">
-              <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Trial 7</label>
-              <div class="col-sm-2 col-3">
-                <input type="number" class="form-control form-control-sm raw" id="raw-7" data-trial="trial7">
-              </div>
-              <div class="col-sm-2 col-3">
-                <input type="text" class="form-control form-control-sm tscore" id="t-score-trial7" readonly>
-              </div>
+            <div class="col-sm-2 col-3">
+              <input type="text" class="form-control form-control-sm tscore" id="t-score-trial5" readonly>
             </div>
+          </div>
+          <div class="form-group row">
+            <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">List B</label>
+            <div class="col-sm-2 col-3">
+              <input type="number" class="form-control form-control-sm raw" id="raw-list-B" data-trial="listb">
+            </div>
+            <div class="col-sm-2 col-3">
+              <input type="text" class="form-control form-control-sm tscore" id="t-score-listb" readonly>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Trial 6</label>
+            <div class="col-sm-2 col-3">
+              <input type="number" class="form-control form-control-sm raw" id="raw-6" data-trial="trial6">
+            </div>
+            <div class="col-sm-2 col-3">
+              <input type="text" class="form-control form-control-sm tscore" id="t-score-trial6" readonly>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="raw-score-a" class="col-sm-2 col-3 col-form-label">Trial 7</label>
+            <div class="col-sm-2 col-3">
+              <input type="number" class="form-control form-control-sm raw" id="raw-7" data-trial="trial7">
+            </div>
+            <div class="col-sm-2 col-3">
+              <input type="text" class="form-control form-control-sm tscore" id="t-score-trial7" readonly>
+            </div>
+          </div>
         </div>
 
         <div class="measures">
@@ -190,7 +207,8 @@
               <input type="number" class="form-control form-control-sm derived" data-derived="proactive" id="proactive" readonly>
             </div>
             <div class="col-sm-2 col-3">
-              <small>0.120 / 1.887</small>
+              <!-- <small>0.120 / 1.887</small> -->
+              <input type="text" class="form-control form-control-sm tscore-derived" id="t-score-proactive" readonly>
             </div>
           </div>
           <div class="form-group row">
@@ -199,7 +217,8 @@
               <input type="number" class="form-control form-control-sm derived" data-derived="retroactive" id="retroactive" readonly>
             </div>
             <div class="col-sm-2 col-3">
-              <small>2.123 / 1.886</small>
+              <!-- <small>2.123 / 1.886</small> -->
+              <input type="text" class="form-control form-control-sm tscore-derived" id="t-score-retroactive" readonly>
             </div>
           </div>
           <div class="form-group row">
@@ -221,22 +240,271 @@
     </div>
 
     <footer class="container py-5">
-			<small>Created by the Dementia Disease Initiation (DDI) project; No guarantee or liability implied.<br>
-			Supplement of <em>Espenes et al (2022). Regression‐based normative data for the Rey Auditory Verbal Learning
-Test in Norwegian and Swedish adults ages 49 to 79. The Clinical Neuropsychologist.</em></small>
+      <small>Created by the Dementia Disease Initiation (DDI) project; No guarantee or liability implied.<br>
+        Supplement of <em>Espenes et al (2022). Regression‐based normative data for the Rey Auditory Verbal Learning
+          Test in Norwegian and Swedish adults ages 49 to 79. The Clinical Neuropsychologist.</em></small>
     </footer>
 
-    </div>
+  </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" charset="utf-8"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="js/ravlt.js" charset="utf-8"></script>
-    <script type="text/javascript">
-      $('#calc').submit(function () {
-         calculate();
-         return false;
-        });
-    </script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- <script src="js/ravlt.js" charset="utf-8"></script> -->
+  <script type="text/javascript">
+    $('#calc').submit(function() {
+      calculate();
+      return false;
+    });
+    const t_score_min = 20;
+    const t_score_max = 80;
+    var coefs = {
+      'intercept': 5.052935,
+      'age': -0.041005,
+      'education': 0.127599,
+      'sex': 0.761477,
+      'sd': 1.589299,
+      'mean_age' : 64.34426,
+      'mean_edu' : 12.66189,
+      'trial1': {
+        'b': 0,
+        'age': 0,
+        'education': 0,
+        'sex': 0,
+        'sd': 1.589299
+      },
+
+      'trial2': {
+        'b': 2.456629,
+        'education': 0.096803,
+        'sex': 0.540453,
+        'sd': 1.812938
+      },
+      'trial3': {
+        'b': 3.825560,
+        'education': 0.122444,
+        'sex': 0.620025,
+        'sd': 2.068447
+      },
+      'trial4': {
+        'b': 5.099066,
+        'education': 0.120430,
+        'sex': 0.317594,
+        'sd': 2.167247
+      },
+      'trial5': {
+        'b': 5.591102,
+        'education': 0.157893,
+        'sex': 0.570805,
+        'sd': 2.118599
+      },
+      'trial6': {
+        'b': 3.281919,
+        'education': 0.212357,
+        'sex': 0.900086,
+        'sd': 2.676763
+      },
+      'trial7': {
+        'b': 3.150541,
+        'education': 0.230134,
+        'sex': 0.712087,
+        'sd': 2.695187
+      },
+      'listb': {
+        'b': 0.181328,
+        'education': 0.053071,
+        'sex': -0.414812,
+        'sd': 1.673211
+      },
+
+      // Derived measures
+      'total-learning': {
+        'intercept': 42.295694,
+        'age': -0.269194,
+        'education': 1.095370,
+        'sex': 5.853990,
+        'sd': 7.981813
+      },
+      'learning-over': {
+        'intercept': 16.971644,
+        'education': 0.479403,
+        'sex': 2.151586,
+        'sd': 6.698638
+      },
+      'learning-rate': {
+        'intercept': 5.591102,
+        'education': 0.157893,
+        'sex': 0.570805,
+        'sd': 2.132889
+      },
+      'proactive': {
+        'intercept': 0.053,
+        'sd': 1.887
+      },
+      'retroactive': {
+        'intercept': 2.123,
+        'sd': 1.886
+      },
+      'ltpr': {
+        'intercept': 77.377120,
+        'age': -0.427209,
+        'education': 1.054169,
+        'sd': 16.492587
+      },
+    }
+
+    function calculate_tscore(elem) {
+
+      var age = parseInt($('#age').val());
+      var age_cent = age - coefs.mean_age;
+      var edu = parseInt($('#edu').val());
+      var edu_cent = edu - coefs.mean_edu;
+      var sex = parseInt($("input[type='radio']:checked").val());
+
+      if (this.value !== '') {
+        var value = parseInt(this.value);
+        var trial = $(this).data('trial');
+        var trial_coefs = coefs[trial];
+        var predicted = coefs.intercept + (sex * coefs.sex) +
+          (age_cent * coefs.age) + (edu_cent * coefs.education) + trial_coefs.b +
+          (edu_cent * trial_coefs.education) + (sex * trial_coefs.sex);
+        // console.log(coefs.intercept + '+(' + sex +'*'+coefs.sex+')' +
+        //           '+ ('+age+'*'+coefs.age+') + ('+ edu+'*'+coefs.education+') + ('+trial_coefs.b+') + ' +edu+ '*'+ trial_coefs.education+') + ('+sex+ '*' +trial_coefs.sex+')')
+
+        var dif = value - predicted;
+        var zscore = (value - predicted) / trial_coefs.sd;
+        var tscore = Math.max(t_score_min, Math.min(t_score_max, Math.round(zscore * 10 + 50)));
+        // console.log(trial + '==> predicted=' + predicted + ' dif='+dif + ' zscore='+zscore + ' tscore='+tscore);
+        $('#t-score-' + trial).val(tscore);
+      }
+
+
+    }
+
+    function set_tscore(element, tscore) {
+      if (!Number.isNaN(tscore)) {
+        $(element).val(tscore);
+      } else {
+        $(element).val('');
+      }
+    }
+
+    function calculate_1_5(age, edu, sex) {
+      var result = undefined;
+      try {
+        var derived = 'total-learning'
+        var vals = $('input')
+          .filter(function() {
+            return this.id.match(/raw-[1,2,3,4,5]/);
+          }).map(function(idx, ele) {
+            return $(ele).val();
+          }).get();
+        var result = vals.reduce((a, b) => parseInt(a) + parseInt(b), 0)
+        $('#total-learning').val(result)
+
+        tcoefs = coefs[derived];
+        var predicted = tcoefs["intercept"] + (edu * tcoefs["education"]) + (sex * tcoefs["sex"]) + (age * tcoefs["age"]);
+        var dif = result - predicted;
+        var zscore = dif / tcoefs.sd;
+        var tscore = Math.max(t_score_min, Math.min(t_score_max, Math.round(zscore * 10 + 50)))
+
+        set_tscore('#t-score-' + derived, tscore);
+
+
+      } catch (e) {
+        console.log(e)
+      }
+      return result;
+
+    }
+
+    function calculate_learning(t_1_5, age, edu, sex) {
+      if (t_1_5 !== undefined) {
+        var derived = 'learning-over'
+        var t1 = parseInt($('#raw-1').val());
+        var learning = t_1_5 - (t1 * 5);
+        $('#learning-over').val(learning);
+        tcoefs = coefs[derived];
+        var predicted = tcoefs["intercept"] + (edu * tcoefs["education"]) + (sex * tcoefs["sex"]);
+        var dif = learning - predicted;
+        var zscore = dif / tcoefs.sd;
+        var tscore = Math.max(t_score_min, Math.min(t_score_max, Math.round(zscore * 10 + 50)))
+        set_tscore('#t-score-' + derived, tscore);
+      }
+    }
+
+    function calculate_learning_rate(age, edu, sex) {
+      var derived = 'learning-rate'
+      var t1 = parseInt($('#raw-1').val())
+      var t5 = parseInt($('#raw-5').val())
+      var rate = (t5 - t1)
+      $('#learning-rate').val(rate)
+
+      tcoefs = coefs[derived];
+      var predicted = tcoefs["intercept"] + (edu * tcoefs["education"]) + (sex * tcoefs["sex"]);
+      var dif = rate - predicted;
+      var zscore = dif / tcoefs.sd;
+      var tscore = Math.max(t_score_min, Math.min(t_score_max, Math.round(zscore * 10 + 50)))
+      set_tscore('#t-score-' + derived, tscore);
+    }
+
+    function calculate_proactive(age, edu, sex) {
+      var t1 = parseInt($('#raw-1').val())
+      var listb = parseInt($('#raw-list-B').val())
+      var rate = (t1 - listb)
+      $('#proactive').val(rate)
+      var zscore = rate / coefs.proactive.sd;
+      var tscore = Math.max(t_score_min, Math.min(t_score_max, Math.round(zscore * 10 + 50)))
+      set_tscore('#t-score-proactive', tscore);
+    }
+
+    function calculate_retroactive(age, edu, sex) {
+      var t5 = parseInt($('#raw-5').val())
+      var t6 = parseInt($('#raw-6').val())
+      var rate = (t5 - t6)
+      $('#retroactive').val(rate)
+      var zscore = rate / coefs.retroactive.sd;
+      var tscore = Math.max(t_score_min, Math.min(t_score_max, Math.round(zscore * 10 + 50)))
+      set_tscore('#t-score-retroactive', tscore);
+
+    }
+
+    function calculate_retention(age, edu, sex) {
+      var derived = 'ltpr'
+      var t5 = parseInt($('#raw-5').val())
+      var t6 = parseInt($('#raw-6').val())
+      var rate = (100 * (t6 / t5))
+      $('#ltpr').val(rate)
+
+      var tcoefs = coefs[derived];
+      var predicted = tcoefs["intercept"] + (edu * tcoefs["education"]) + (age * tcoefs["age"]);
+      var dif = rate - predicted;
+      var zscore = dif / tcoefs.sd;
+      var tscore = Math.max(t_score_min, Math.min(t_score_max, Math.round(zscore * 10 + 50)))
+      set_tscore('#t-score-' + derived, tscore);
+
+
+    }
+
+    function calculate_derived(age, edu, sex) {
+      var t_1_5 = calculate_1_5(age, edu, sex);
+      calculate_learning(t_1_5, age, edu, sex);
+      calculate_learning_rate(age, edu, sex);
+      calculate_proactive(age, edu, sex);
+      calculate_retroactive(age, edu, sex);
+      calculate_retention(age, edu, sex);
+    }
+
+    function calculate() {
+      $('.raw').each(calculate_tscore);
+      var age = parseInt($('#age').val());
+      var age_cent = age - coefs.mean_age;
+      var edu = parseInt($('#edu').val());
+      var edu_cent = edu - coefs.mean_edu;
+      var sex = parseInt($("input[type='radio']:checked").val());
+      calculate_derived(age_cent, edu_cent, sex);
+    }
+  </script>
+</body>
+
 </html>
